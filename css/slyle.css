@@ -252,7 +252,7 @@ a.mail:focus {
 }
 
 .modal {
-  display: flex;
+  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -261,7 +261,6 @@ a.mail:focus {
   transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 3;
-  padding: 8px;
 
   min-width: 528px;
   min-height: 581px;
@@ -272,6 +271,9 @@ a.mail:focus {
 }
 
 .modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   display: flex;
   margin-left: auto;
   justify-content: center;
@@ -283,6 +285,32 @@ a.mail:focus {
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   background-color: var(--background-main-color);
+  cursor: pointer;
+}
+
+.modal-button:hover {
+  fill: var(--accent-text-color);
+}
+
+.modal-box {
+  padding: 40px;
+}
+
+.modal-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }
 
 .warranty,
@@ -619,6 +647,7 @@ a.connection {
   align-items: center;
   text-align: center;
   color: var(--background-main-color);
+  cursor: pointer;
 }
 
 .telegram-icon {
@@ -631,7 +660,7 @@ a.connection {
   padding-bottom: 15px;
   padding-left: 16px;
   margin-right: 12px;
-  background-color: var(--background-hero-color);
+  background-color: transparent;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;

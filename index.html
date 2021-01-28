@@ -51,7 +51,23 @@
                         <svg class="chest" width="11" height="11">
                             <use href="./images/sprite.svg#close"></use>
                         </svg>
-                   </button>     
+                   </button> 
+                   <div class="modal-box">
+                        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>  
+                        <form class="modal-form">
+                            <label for="user-name">Имя</label>
+                              <input type="text" name="user-name" id="user-name">
+                            <label for="tel">Телефон</label>
+                              <input type="tel" name="user-tel" id="tel">
+                            <label for="user-email">Почта</label>
+                              <input type="email" name="user-email" id="user-email">
+                            <label for="feed">Комментарий</label>
+                              <textarea name="feedback" id="feed" rows="5" placeholder="Введите текст"></textarea>
+                            <input type="checkbox" name="contract" id="contract">
+                            <label for="contract">Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></label>
+                              <button type="submit">Отправить</button>
+                        </form>
+                   </div>  
                 </div>
             </div> 
         </section>  
