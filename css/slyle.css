@@ -226,7 +226,9 @@ a.mail:focus {
 }
 
 .hero-link:hover,
-.hero-link:focus {
+.hero-link:focus,
+.footer-botton:hover,
+.footer-botton:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -582,6 +584,10 @@ a.connection {
   margin-right: 70px;
 }
 
+.soc-box {
+  margin-right: 93px;
+}
+
 .soc-block {
   display: flex;
   width: 100%;
@@ -600,6 +606,44 @@ a.connection {
 .soc-block:focus {
   background-color: var(--accent-text-color);
 }
+
+.footer-botton {
+  padding: 10px 29px;
+  border-radius: 4px;
+  background-color: var(--accent-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  color: var(--background-main-color);
+}
+
+.telegram-icon {
+  margin-left: 10px;
+}
+
+.input-subc {
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  background-color: var(--background-hero-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* button */
 
 .button {
