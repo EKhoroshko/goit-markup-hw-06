@@ -230,6 +230,7 @@ a.mail:focus {
 .footer-botton:hover,
 .footer-botton:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
 }
 
 .backdrop {
@@ -385,26 +386,25 @@ a.mail:focus {
 }
 
 .occupation .items {
+  position: relative;
   display: block;
+  width: 370px;
+  height: 294px;
+  z-index: -1;
   margin-right: 30px;
   line-height: 0px;
 }
 
-.occupation-box1,
-.occupation-box2,
-.occupation-box3 {
-  position: relative;
-  z-index: -1;
-}
-
 .occupation img {
   display: block;
+  width: 100%;
 }
 
 .occupation-title {
   position: absolute;
   bottom: 0;
   min-width: 100%;
+  height: 70px;
   background: rgba(47, 48, 58, 0.8);
 
   padding-top: 27px;
@@ -762,7 +762,6 @@ a.connection {
   line-height: 0px;
   background-color: var(--background-main-color);
   border: 1px solid #eeeeee;
-  box-sizing: border-box;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
