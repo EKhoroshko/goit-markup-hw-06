@@ -824,7 +824,8 @@ a.connection {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.items-project:hover .project1-overley {
+.items-link:hover .project1-overley,
+.items-link:focus .project1-overley {
   transform: translateY(0);
 }
 
