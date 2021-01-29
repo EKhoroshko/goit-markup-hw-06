@@ -252,6 +252,8 @@ a.mail:focus {
   opacity: 0;
 }
 
+/* modal */
+
 .modal {
   display: block;
   position: absolute;
@@ -275,6 +277,7 @@ a.mail:focus {
   position: absolute;
   top: 8px;
   right: 8px;
+  max-width: 528px;
   display: flex;
   margin-left: auto;
   justify-content: center;
@@ -295,11 +298,16 @@ a.mail:focus {
 
 .modal-box {
   padding: 40px;
+  background-color: var(--background-main-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .modal-title {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
+  max-width: 100%;
 
   font-weight: 700;
   font-size: 20px;
@@ -309,9 +317,60 @@ a.mail:focus {
 
   color: var(--title-text-color);
 }
+
 .modal-form {
   display: flex;
   flex-direction: column;
+}
+
+.modal-ladel {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.modal-input {
+  margin-bottom: 10px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-area {
+  margin-bottom: 10px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-area {
+  padding: 12px 16px;
+}
+.modal-area::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-button {
+  width: 200px;
+  padding: 10px 55px;
+  margin: 0 auto;
+  margin-top: 40px;
+  outline: none;
+  background-color: #188ce8;
+  color: var(--background-main-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
 }
 
 .warranty,
