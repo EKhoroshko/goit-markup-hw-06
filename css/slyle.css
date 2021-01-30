@@ -459,20 +459,19 @@ a.mail:focus {
   width: 100%;
 }
 
-.occupation-title {
+.occupation-wraper {
   position: absolute;
-  bottom: 0;
-  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 70px;
+  min-width: 100%;
+  bottom: 0;
   background: rgba(47, 48, 58, 0.8);
+}
 
-  padding-top: 27px;
-  padding-bottom: 27px;
-  padding-left: 83px;
-  padding-right: 82px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-
+.occupation-title {
+  margin: 0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -817,10 +816,10 @@ a.connection {
   margin-right: 30px;
   margin-bottom: 30px;
   width: 372px;
+  outline: 1px solid #eeeeee;
 
   line-height: 0px;
   background-color: var(--background-main-color);
-  border: 1px solid #eeeeee;
 
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -865,12 +864,12 @@ a.connection {
   padding: 20px 24px;
 }
 
-.project1 {
+.card-overlay {
   position: relative;
   overflow: hidden;
 }
 
-.project1-overley {
+.project-overley {
   position: absolute;
   top: 0;
   left: 0;
@@ -883,8 +882,8 @@ a.connection {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.items-link:hover .project1-overley,
-.items-link:focus .project1-overley {
+.items-link:hover .project-overley,
+.items-link:focus .project-overley {
   transform: translateY(0);
 }
 
