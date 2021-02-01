@@ -54,13 +54,29 @@
                    </button> 
                    <div class="modal-box">
                         <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>  
-                        <form class="modal-form">
-                            <label class="modal-ladel" for="user-name">Имя</label>
-                              <input class="modal-input" type="text" name="user-name" id="user-name">
-                            <label class="modal-ladel" for="tel">Телефон</label>
-                              <input class="modal-input" type="tel" name="user-tel" id="tel">
-                            <label class="modal-ladel" for="user-email">Почта</label>
-                              <input class="modal-input" type="email" name="user-email" id="user-email">
+                        <form class="modal-form" autocomplete="off">
+                            <div class="modal-boxs">
+                                 <label class="modal-ladel">Имя</label>
+                                    <input class="modal-input" type="text" name="user-name">
+                                    <svg class="modal-icon" width="12" height="12">
+                                        <use href="./images/sprite.svg#name"></use>
+                                    </svg>
+                            </div>
+                            <div class="modal-boxs">
+                                <label class="modal-ladel" for="tel">Телефон</label>
+                                    <input class="modal-input" type="tel" name="user-tel" id="tel">
+                                     <svg class="modal-icon" width="13" height="13">
+                                        <use href="./images/sprite.svg#oldphone"></use>
+                                    </svg>
+                            </div>
+                            <div class="modal-boxs">
+                                <label class="modal-ladel" for="user-email">Почта</label>
+                                    <input class="modal-input" type="email" name="user-email" id="user-email">
+                                    <svg class="modal-icon" width="15" height="12">
+                                        <use href="./images/sprite.svg#blackconv"></use>
+                                    </svg>
+                            </div>
+                            
                             <label class="modal-ladel" for="feed">Комментарий</label>
                               <textarea class="modal-area" name="feedback" id="feed" rows="5" placeholder="Введите текст"></textarea>
                             <input class="modal-input" type="checkbox" name="contract" id="contract">
