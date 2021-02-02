@@ -282,7 +282,6 @@ a.mail:focus {
   margin-left: auto;
   justify-content: center;
   align-items: center;
-  outline: none;
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -292,8 +291,10 @@ a.mail:focus {
   cursor: pointer;
 }
 
-.modal-button:hover {
+.modal-button:hover,
+.modal-button:focus {
   fill: var(--accent-text-color);
+  outline: none;
 }
 
 .modal-box {
