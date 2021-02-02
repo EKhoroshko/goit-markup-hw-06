@@ -726,6 +726,7 @@ a.mail:focus {
 .address a:focus,
 .address a:hover {
   color: var(--accent-text-color);
+  transition: var(--animation);
 }
 
 .footer .mobile {
