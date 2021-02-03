@@ -766,10 +766,6 @@ a.connection {
   margin-right: 70px;
 }
 
-.soc-box {
-  margin-right: 93px;
-}
-
 .soc-block {
   display: flex;
   width: 100%;
@@ -789,6 +785,9 @@ a.connection {
   background-color: var(--accent-text-color);
 }
 
+.subscription {
+  margin-left: auto;
+}
 .footer-botton {
   padding: 10px 29px;
   border-radius: 4px;
