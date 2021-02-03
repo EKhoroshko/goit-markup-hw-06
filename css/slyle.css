@@ -329,8 +329,9 @@ a.mail:focus {
 
 .modal-icon {
   position: absolute;
-  top: 29px;
+  top: 50%;
   left: 15px;
+  transform: translateY(-30%);
   fill: var(--title-text-color);
 }
 
