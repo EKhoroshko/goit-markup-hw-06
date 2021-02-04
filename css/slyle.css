@@ -206,7 +206,7 @@ a.mail:focus {
   text-transform: uppercase;
 }
 
-.hero-link {
+.hero-button {
   padding: 10px 32px;
   min-width: 200px;
   margin: 0 auto;
@@ -226,8 +226,8 @@ a.mail:focus {
   cursor: pointer;
 }
 
-.hero-link:hover,
-.hero-link:focus,
+.hero-button:hover,
+.hero-button:focus,
 .footer-botton:hover,
 .footer-botton:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
