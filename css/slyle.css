@@ -353,14 +353,19 @@ a.mail:focus {
   border-radius: 4px;
 }
 
+.modal-input:hover,
 .modal-input:focus,
-.modal-area:focus {
-  outline-color: var(--accent-text-color);
+.modal-area:focus,
+.modal-area:hover {
+  border: 1px solid var(--accent-text-color);
+  outline: var(--accent-text-color);
   transition: var(--animation);
 }
 
-.modal-input:focus + .modal-icon {
+.modal-input:focus + .modal-icon,
+.modal-input:hover + .modal-icon {
   fill: var(--accent-text-color);
+  outline-color: var(--accent-text-color);
   transition: var(--animation);
 }
 
@@ -426,7 +431,8 @@ a.mail:focus {
   background-origin: border-box;
 }
 
-.checkbox:focus + .check-icon {
+.checkbox:focus + .check-icon,
+.checkbox:hover + .check-icon {
   border-color: var(--accent-text-color);
 }
 
@@ -802,6 +808,7 @@ a.connection {
   text-align: center;
   color: var(--background-main-color);
   cursor: pointer;
+  border: none;
 }
 
 .telegram-icon {
