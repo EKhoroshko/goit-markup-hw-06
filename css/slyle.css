@@ -344,10 +344,12 @@ a.mail:focus {
 
 .modal-ladel:hover .modal-icon {
   fill: var(--accent-text-color);
+  transition: var(--animation);
 }
 
 .modal-ladel:hover .modal-input {
   border: 1px solid var(--accent-text-color);
+  transition: var(--animation);
 }
 
 .modal-input {
