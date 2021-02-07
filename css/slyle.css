@@ -224,6 +224,7 @@ a.mail:focus {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: var(--animation);
 }
 
 .hero-button:hover,
@@ -362,6 +363,10 @@ a.mail:focus {
   transition: var(--animation);
 }
 
+.modal-icon:hover {
+  fill: var(--accent-text-color);
+}
+
 .modal-input:focus + .modal-icon,
 .modal-input:hover + .modal-icon {
   fill: var(--accent-text-color);
@@ -456,11 +461,13 @@ a.mail:focus {
   margin: 0 auto;
   background-color: var(--accent-text-color);
   color: var(--background-main-color);
+  border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  transition: var(--animation);
   cursor: pointer;
 }
 
