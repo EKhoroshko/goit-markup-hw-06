@@ -298,6 +298,7 @@ a.mail:focus {
 .modal-button:focus {
   fill: var(--accent-text-color);
   outline: none;
+  transition: var(--animation);
 }
 
 .modal-box {
