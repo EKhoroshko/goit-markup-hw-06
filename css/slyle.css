@@ -329,7 +329,6 @@ a.mail:focus {
   position: absolute;
   top: 50%;
   left: 15px;
-  transform: translateX(-10%);
   fill: var(--title-text-color);
 }
 
